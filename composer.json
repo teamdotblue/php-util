@@ -1,8 +1,8 @@
 {
-    "name": "arnedesmedt/php-util",
+    "name": "team-blue/php-util",
     "type": "library",
     "description": "PHP Utililty tools",
-    "homepage": "https://github.com/arnedesmedt/php-util",
+    "homepage": "https://gitlab.group.team.blue/be-platforms/packages/php/util",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
         "symfony/http-kernel": "~6.0 || ~7.0"
     },
     "require-dev" : {
-        "arnedesmedt/json-immutable-objects": "~0.1",
+        "team-blue/php-json-immutable-objects": "~0.1",
         "doctrine/coding-standard": "~12.0",
         "phpmd/phpmd": "~2.0",
         "phpro/grumphp": "~2.0",
