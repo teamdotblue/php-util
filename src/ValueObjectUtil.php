@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util;
+namespace TeamBlue\Util;
 
 use function is_a;
 use function is_object;
@@ -14,7 +14,7 @@ final class ValueObjectUtil
     {
         if (
             is_object($data)
-            && is_a($data, 'ADS\ValueObjects\ValueObject')
+            && is_a($data, 'TeamBlue\ValueObjects\ValueObject')
             && method_exists($data, 'toValue')
         ) {
             return $data->toValue(); // @phpstan-ignore-line

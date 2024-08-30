@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Object\Immutable;
+namespace TeamBlue\Util\Tests\Object\Immutable;
 
 use EventEngine\JsonSchema\JsonSchemaAwareRecord;
 use EventEngine\JsonSchema\JsonSchemaAwareRecordLogic;

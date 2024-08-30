@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Unit\MetadataExtractor;
+namespace TeamBlue\Util\Tests\Unit\MetadataExtractor;
 
-use ADS\Util\MetadataExtractor\AttributeExtractor;
-use ADS\Util\Tests\Object\Attribute\TestAttribute;
-use ADS\Util\Tests\Object\Immutable\TestImmutable;
-use ADS\Util\Tests\Object\Immutable\TestImmutableWithoutAttribute;
-use ADS\Util\Tests\Object\TestObject;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
+use TeamBlue\Util\MetadataExtractor\AttributeExtractor;
+use TeamBlue\Util\Tests\Object\Attribute\TestAttribute;
+use TeamBlue\Util\Tests\Object\Immutable\TestImmutable;
+use TeamBlue\Util\Tests\Object\Immutable\TestImmutableWithoutAttribute;
+use TeamBlue\Util\Tests\Object\TestObject;
 
 class AttributeExtractorTest extends TestCase
 {

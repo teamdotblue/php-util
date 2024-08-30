@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util;
+namespace TeamBlue\Util;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

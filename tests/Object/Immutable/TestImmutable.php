@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Object\Immutable;
+namespace TeamBlue\Util\Tests\Object\Immutable;
 
-use ADS\Util\Tests\Object\Attribute\TestAttribute;
 use EventEngine\JsonSchema\JsonSchemaAwareRecord;
 use EventEngine\JsonSchema\JsonSchemaAwareRecordLogic;
+use TeamBlue\Util\Tests\Object\Attribute\TestAttribute;
 
 #[TestAttribute]
 class TestImmutable implements JsonSchemaAwareRecord

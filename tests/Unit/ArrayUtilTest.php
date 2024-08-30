@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Unit;
+namespace TeamBlue\Util\Tests\Unit;
 
-use ADS\Util\ArrayUtil;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
+use TeamBlue\Util\ArrayUtil;
 
 /** @SuppressWarnings(PHPMD.BooleanArgumentFlag) */
 class ArrayUtilTest extends TestCase

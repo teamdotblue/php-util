@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Unit;
+namespace TeamBlue\Util\Tests\Unit;
 
-use ADS\Util\StringUtil;
 use LogicException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
+use TeamBlue\Util\StringUtil;
 
 class StringUtilTest extends TestCase
 {
@@ -214,7 +214,7 @@ class StringUtilTest extends TestCase
     public function testEntityNamespaceFromClassName(): void
     {
         $this->assertEquals(
-            'ADS\Util',
+            'TeamBlue\Util',
             StringUtil::entityNamespaceFromClassName(StringUtil::class, ['Util', 'Tests']),
         );
         $this->assertEquals(

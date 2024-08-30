@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util;
+namespace TeamBlue\Util;
 
 use function is_a;
 use function is_object;

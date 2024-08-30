@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Unit;
+namespace TeamBlue\Util\Tests\Unit;
 
-use ADS\Util\ScalarUtil;
-use ADS\Util\Tests\Object\Immutable\TestImmutable;
 use PHPUnit\Framework\TestCase;
+use TeamBlue\Util\ScalarUtil;
+use TeamBlue\Util\Tests\Object\Immutable\TestImmutable;
 
 class ScalarUtilTest extends TestCase
 {

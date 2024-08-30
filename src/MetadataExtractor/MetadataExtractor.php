@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\MetadataExtractor;
+namespace TeamBlue\Util\MetadataExtractor;
 
 use Closure;
 use EventEngine\JsonSchema\JsonSchemaAwareRecord;

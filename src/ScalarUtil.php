@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util;
+namespace TeamBlue\Util;
 
 use function array_map;
 use function is_array;

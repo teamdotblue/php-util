@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util;
+namespace TeamBlue\Util;
 
 use Closure;
 use stdClass;

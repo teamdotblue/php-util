@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Object\Attribute;
+namespace TeamBlue\Util\Tests\Object\Attribute;
 
 use Attribute;
 

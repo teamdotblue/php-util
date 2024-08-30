@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace ADS\Util\Tests\Unit\MetadataExtractor;
+namespace TeamBlue\Util\Tests\Unit\MetadataExtractor;
 
-use ADS\Util\MetadataExtractor\ClassExtractor;
-use ADS\Util\Tests\Object\Immutable\TestImmutable;
-use ADS\Util\Tests\Object\Interface\TestInterface;
-use ADS\Util\Tests\Object\TestObject;
 use EventEngine\JsonSchema\JsonSchemaAwareRecord;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use ReflectionException;
+use TeamBlue\Util\MetadataExtractor\ClassExtractor;
+use TeamBlue\Util\Tests\Object\Immutable\TestImmutable;
+use TeamBlue\Util\Tests\Object\Interface\TestInterface;
+use TeamBlue\Util\Tests\Object\TestObject;
 
 class ClassExtractorTest extends TestCase
 {
