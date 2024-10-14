@@ -26,6 +26,12 @@
         "rector/rector": "~1.0",
         "squizlabs/php_codesniffer": "~3.0"
     },
+    "repositories": {
+        "packeton.teamblue-ops.net": {
+            "type": "composer",
+            "url": "https://packeton.teamblue-ops.net"
+        }
+    },
     "autoload": {
         "psr-4": {
             "TeamBlue\\Util\\": "src/"
