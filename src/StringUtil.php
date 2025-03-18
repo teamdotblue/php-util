@@ -21,11 +21,14 @@ use function json_decode;
 use function lcfirst;
 use function preg_match;
 use function preg_quote;
+use function preg_replace;
 use function preg_split;
 use function reset;
 use function sort;
 use function sprintf;
 use function str_contains;
+use function strtolower;
+use function trim;
 
 use const JSON_THROW_ON_ERROR;
 
@@ -196,5 +199,13 @@ final class StringUtil
         sort($positions);
 
         return $positions;
+    }
+
+    public static function slug(string $slug): string
+    {
+        /** @var string $trim */
+        $trim = preg_replace('/[^A-Za-z0-9-]+/', '-', $slug);
+
+        return strtolower(trim($trim, '-'));
     }
 }

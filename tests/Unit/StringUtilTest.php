@@ -211,6 +211,47 @@ class StringUtilTest extends TestCase
         $this->assertEquals($expected, StringUtil::castFromString($input));
     }
 
+    /** @return array<string, array<string, string>> */
+    public static function dataProviderSlug(): array
+    {
+        return [
+            'one-word' => [
+                'input' => 'camel',
+                'expected' => 'camel',
+            ],
+            'snake-case' => [
+                'input' => 'snake_case',
+                'expected' => 'snake-case',
+            ],
+            'camel-case' => [
+                'input' => 'camelCase',
+                'expected' => 'camelcase',
+            ],
+            'pascal-case' => [
+                'input' => 'PascalCase',
+                'expected' => 'pascalcase',
+            ],
+            'kebab-case' => [
+                'input' => 'kebab-case',
+                'expected' => 'kebab-case',
+            ],
+            'space' => [
+                'input' => 'space space',
+                'expected' => 'space-space',
+            ],
+            'combination' => [
+                'input' => 'snake_case-kebabCase',
+                'expected' => 'snake-case-kebabcase',
+            ],
+        ];
+    }
+
+    #[DataProvider('dataProviderSlug')]
+    public function testSlug(string $input, string $expected): void
+    {
+        $this->assertEquals($expected, StringUtil::slug($input));
+    }
+
     public function testEntityNamespaceFromClassName(): void
     {
         $this->assertEquals(
