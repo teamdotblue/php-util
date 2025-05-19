@@ -21,6 +21,7 @@ use function json_decode;
 use function lcfirst;
 use function preg_match;
 use function preg_quote;
+use function preg_replace;
 use function preg_split;
 use function reset;
 use function sort;
@@ -164,6 +165,11 @@ final class StringUtil
                 $className,
             ),
         );
+    }
+
+    public static function guidToUuid(string $guid): string
+    {
+        return preg_replace('/^([a-f0-9]{8})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{12})$/i', '$1-$2-$3-$4-$5', $guid);
     }
 
     /**
