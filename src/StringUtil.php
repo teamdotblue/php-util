@@ -167,13 +167,21 @@ final class StringUtil
         );
     }
 
-    public static function guidToUuid(string $guid): string
+    public static function guidToUuid(string|null $guid): string|null
     {
+        if ($guid === null) {
+            return null;
+        }
+
         return preg_replace('/^([a-f0-9]{8})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{12})$/i', '$1-$2-$3-$4-$5', $guid);
     }
 
-    public static function uuidToGuuid(string $uuid): string
+    public static function uuidToGuuid(string|null $uuid): string|null
     {
+        if ($uuid === null) {
+            return null;
+        }
+
         return implode('', explode('-', $uuid));
     }
 
