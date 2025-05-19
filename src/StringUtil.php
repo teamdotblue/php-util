@@ -172,6 +172,11 @@ final class StringUtil
         return preg_replace('/^([a-f0-9]{8})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{4})([a-f0-9]{12})$/i', '$1-$2-$3-$4-$5', $guid);
     }
 
+    public static function uuidToGuuid(string $uuid): string
+    {
+        return implode('', explode('-', $uuid));
+    }
+
     /**
      * @param array<string> $prefixes
      *
