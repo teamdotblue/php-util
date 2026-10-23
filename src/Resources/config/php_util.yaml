@@ -1,0 +1,7 @@
+services:
+    TeamBlue\Util\MetadataExtractor\AttributeExtractor: ~
+    TeamBlue\Util\MetadataExtractor\ClassExtractor: ~
+    TeamBlue\Util\MetadataExtractor\MetadataExtractor:
+        arguments:
+            - '@TeamBlue\Util\MetadataExtractor\AttributeExtractor'
+            - '@TeamBlue\Util\MetadataExtractor\ClassExtractor'
